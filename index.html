@@ -3,78 +3,335 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional digital guidebooks for vacation rentals and properties in Lagos and the Algarve.">
-    <title>Algarve Property Guidebooks</title>
+    <meta name="description" content="Custom guidebooks for vacation rental properties across the Algarve. Physical guidebook plus digital PDF for €99. Made by locals in Lagos, Portugal.">
+    <title>Algarve Property Guidebooks | Custom Guidebooks for Vacation Rentals</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="logo"><img src="logo.svg" alt="Algarve Property Guidebooks"></a>
+        <button class="mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Examples</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
+        </ul>
+    </nav>
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <img src="logo.svg" alt="Algarve Property Guidebooks" class="hero-logo">
-            <p class="tagline">Beautiful digital guidebooks for vacation properties in the Algarve</p>
-            <p class="sub-tagline">Done-for-you by locals who know the Algarve</p>
-            <p class="price-tag">From €99</p>
+            <span class="hero-badge">Based in Lagos, Algarve</span>
+            <h1>Professional Guidebooks Made by Locals Who Know the Algarve</h1>
+            <p class="hero-subtitle">Give your guests a beautiful, personalised guidebook with everything they need. Less questions for you, better experiences for them.</p>
+            <a href="#contact" class="hero-cta">Start Your Guidebook</a>
+            <span class="hero-price">Complete package from €99</span>
         </div>
     </section>
 
-    <!-- Work Section -->
-    <section class="work">
+    <!-- About Section -->
+    <section id="about" class="section section-cream">
         <div class="container">
-            <h2>Example Guidebooks</h2>
-            <div class="work-grid">
-                <div class="work-item">
-                    <div class="work-image">
-                        <img src="https://images.pexels.com/photos/2119713/pexels-photo-2119713.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Luxury Villa Guidebook">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="section-label">Who We Are</span>
+                    <h3>We Live Here. We Know Every Corner of the Algarve.</h3>
+                    <p>We're a small team based in Lagos, creating custom guidebooks for vacation rental owners across the Algarve. Every recommendation comes from first-hand experience.</p>
+                    <p>From the golden cliffs of Lagos to the marina bars of Albufeira, the backstreets of Faro to the quiet beaches of the western coast — we write about places we actually visit.</p>
+                    <div class="about-locations">
+                        <span class="location-tag">Lagos</span>
+                        <span class="location-tag">Albufeira</span>
+                        <span class="location-tag">Faro</span>
+                        <span class="location-tag">Portim&atilde;o</span>
+                        <span class="location-tag">Tavira</span>
+                        <span class="location-tag">Vilamoura</span>
+                        <span class="location-tag">Sagres</span>
+                        <span class="location-tag">Loul&eacute;</span>
                     </div>
-                    <h3>Luxury Villa</h3>
-                    <p>Lagos, Algarve</p>
                 </div>
-                <div class="work-item">
-                    <div class="work-image">
-                        <img src="https://images.pexels.com/photos/2459970/pexels-photo-2459970.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Beach Apartment Guidebook">
+                <div class="about-image">
+                    <div class="about-image-card">
+                        <span class="local-badge">Made in Lagos, Portugal</span>
+                        <div class="stat-grid">
+                            <div class="stat-item">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label">Local Knowledge</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">€99</div>
+                                <div class="stat-label">Complete Package</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">2-in-1</div>
+                                <div class="stat-label">Print + Digital</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">48h</div>
+                                <div class="stat-label">Typical Turnaround</div>
+                            </div>
+                        </div>
                     </div>
-                    <h3>Beach Apartment</h3>
-                    <p>Praia da Luz</p>
-                </div>
-                <div class="work-item">
-                    <div class="work-image">
-                        <img src="https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Traditional Townhouse Guidebook">
-                    </div>
-                    <h3>Traditional Townhouse</h3>
-                    <p>Lagos Old Town</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about">
+    <!-- Services Section -->
+    <section id="services" class="section section-white">
         <div class="container">
-            <h2>What I Do</h2>
-            <p>I create custom digital and printed guidebooks for vacation rental owners and property managers in the Algarve. Each guidebook includes property instructions, local recommendations, and everything your guests need — beautifully designed and ready to use.</p>
-            <p class="highlight">Based in Lagos. Local knowledge included.</p>
+            <div class="section-header">
+                <span class="section-label">What You Get</span>
+                <h2>Everything Your Guests Need, Beautifully Designed</h2>
+                <p>One price, no surprises. Your guidebook is fully customised to your property and the area around it.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-package">
+                    <div class="price">€99</div>
+                    <div class="price-note">One-time payment, no subscriptions</div>
+                    <h3>The Complete Guidebook Package</h3>
+                    <ul class="service-list">
+                        <li>
+                            <span class="check">&#10003;</span>
+                            <span>Professionally printed physical guidebook for your property</span>
+                        </li>
+                        <li>
+                            <span class="check">&#10003;</span>
+                            <span>Digital PDF version guests can access on any device</span>
+                        </li>
+                        <li>
+                            <span class="check">&#10003;</span>
+                            <span>Curated local restaurant, beach, and activity recommendations</span>
+                        </li>
+                        <li>
+                            <span class="check">&#10003;</span>
+                            <span>Property-specific instructions (WiFi, appliances, check-in/out)</span>
+                        </li>
+                        <li>
+                            <span class="check">&#10003;</span>
+                            <span>Emergency contacts and practical local information</span>
+                        </li>
+                        <li>
+                            <span class="check">&#10003;</span>
+                            <span>Custom branding with your property name and style</span>
+                        </li>
+                        <li>
+                            <span class="check">&#10003;</span>
+                            <span>Area maps and directions to key locations</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="service-details">
+                    <div class="service-detail-card">
+                        <span class="service-icon">&#128214;</span>
+                        <h4>Physical Guidebook</h4>
+                        <p>A beautifully printed, bound guidebook that sits in your property. Guests love having something tangible to browse over morning coffee.</p>
+                    </div>
+                    <div class="service-detail-card">
+                        <span class="service-icon">&#128241;</span>
+                        <h4>Digital PDF</h4>
+                        <p>The same content in a PDF your guests can download before they arrive. Send it with your booking confirmation or share via WhatsApp.</p>
+                    </div>
+                    <div class="service-detail-card">
+                        <span class="service-icon">&#127758;</span>
+                        <h4>Local Recommendations</h4>
+                        <p>Not generic tourist tips. Real places we eat, drink, and visit. Updated regularly to keep your guidebook current.</p>
+                    </div>
+                    <div class="service-detail-card">
+                        <span class="service-icon">&#127968;</span>
+                        <h4>Property Instructions</h4>
+                        <p>Clear, visual instructions for everything guests ask about. WiFi passwords, how the AC works, bin collection days — all covered.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section section-cream">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Work</span>
+                <h2>Guidebooks That Reflect Your Property</h2>
+                <p>Every guidebook is designed to match the character of the property and its location.</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/2119713/pexels-photo-2119713.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Luxury Villa Guidebook - Lagos">
+                        <span class="portfolio-tag">Luxury Villa</span>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Cliff-Top Villa</h3>
+                        <p>Lagos, Algarve</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/2459970/pexels-photo-2459970.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Beach Apartment Guidebook - Praia da Luz">
+                        <span class="portfolio-tag">Beach Apartment</span>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Seaside Retreat</h3>
+                        <p>Praia da Luz</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Traditional Townhouse Guidebook - Lagos Old Town">
+                        <span class="portfolio-tag">Townhouse</span>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Old Town Townhouse</h3>
+                        <p>Lagos Old Town</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="section section-white">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Why It Works</span>
+                <h2>Better for Your Guests, Easier for You</h2>
+                <p>A good guidebook solves problems before they happen.</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">&#128172;</div>
+                    <h3>Fewer Repetitive Questions</h3>
+                    <p>WiFi password, nearest supermarket, how to use the washing machine. Put it all in the guidebook and stop answering the same messages.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">&#11088;</div>
+                    <h3>Better Guest Reviews</h3>
+                    <p>Guests who feel looked after leave better reviews. A quality guidebook shows you care about their experience from the moment they arrive.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">&#127961;</div>
+                    <h3>Authentic Local Experience</h3>
+                    <p>Your guests discover the real Algarve, not just tourist traps. They'll thank you for the restaurant tip that became the highlight of their trip.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">&#128176;</div>
+                    <h3>Professional Property Branding</h3>
+                    <p>A branded guidebook sets your property apart from the competition. It signals quality and attention to detail that guests remember.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">&#9201;</div>
+                    <h3>Save Hours Every Week</h3>
+                    <p>Stop writing the same WhatsApp messages to every new guest. The guidebook handles the information sharing so you don't have to.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">&#128260;</div>
+                    <h3>Repeat Bookings</h3>
+                    <p>Guests who have a great experience come back. A guidebook that helps them explore confidently is part of building that loyalty.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact">
+    <section id="contact" class="section section-cream">
         <div class="container">
-            <h2>Let's Talk</h2>
-            <p>Interested in a guidebook for your property?</p>
-            <a href="https://wa.me/351XXXXXXXXX" class="btn-whatsapp" target="_blank">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                WhatsApp Me
-            </a>
+            <div class="section-header">
+                <span class="section-label">Get Started</span>
+                <h2>Ready to Create Your Guidebook?</h2>
+                <p>Drop us a message and we'll get back to you within 24 hours. WhatsApp is the quickest way to reach us.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-text">
+                    <h3>Let's Talk About Your Property</h3>
+                    <p>Whether you have a single apartment or manage multiple properties across the Algarve, we'd love to hear from you. No hard sell, just a conversation about what would work best.</p>
+                    <div class="contact-methods">
+                        <a href="https://wa.me/351XXXXXXXXX" class="contact-method" target="_blank">
+                            <div class="contact-method-icon whatsapp">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            </div>
+                            <div class="contact-method-details">
+                                <span class="label">Preferred contact</span>
+                                <span class="value">WhatsApp Us</span>
+                            </div>
+                        </a>
+                        <a href="mailto:hello@algarveguidebooks.com" class="contact-method">
+                            <div class="contact-method-icon email">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+                            </div>
+                            <div class="contact-method-details">
+                                <span class="label">Email</span>
+                                <span class="value">hello@algarveguidebooks.com</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <h3>Send us a quick message</h3>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="e.g. Sarah Johnson">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="sarah@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="property-location">Property Location</label>
+                            <input type="text" id="property-location" name="property-location" placeholder="e.g. Lagos, Albufeira, Faro">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tell us about your property</label>
+                            <textarea id="message" name="message" required placeholder="A few words about your property and what you're looking for..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Algarve Property Guidebooks &middot; Lagos, Portugal</p>
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="logo.svg" alt="Algarve Property Guidebooks" style="height: 36px; filter: brightness(0) invert(1); margin-bottom: 0.5rem;">
+                    <p>Custom guidebooks for vacation rental properties across the Algarve. Made with local knowledge in Lagos, Portugal.</p>
+                </div>
+                <div class="footer-links-grid">
+                    <div class="footer-col">
+                        <h4>Pages</h4>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#portfolio">Examples</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="https://wa.me/351XXXXXXXXX" target="_blank">WhatsApp</a></li>
+                            <li><a href="mailto:hello@algarveguidebooks.com">Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Algarve Property Guidebooks. Lagos, Algarve, Portugal.</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

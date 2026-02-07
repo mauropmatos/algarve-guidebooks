@@ -3,76 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about Algarve Property Guidebooks - Your trusted partner for professional property guidebooks in Lagos and the Algarve region.">
+    <meta name="description" content="About Algarve Property Guidebooks. We're a local team in Lagos creating custom guidebooks for vacation rental properties across the Algarve region.">
     <title>About Us | Algarve Property Guidebooks</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <a href="index.html" class="logo"><img src="logo.svg" alt="Algarve Property Guidebooks"></a>
+        <button class="mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html" class="active">About</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html#contact" class="nav-cta">Get in Touch</a></li>
         </ul>
     </nav>
 
     <!-- Hero Section -->
-    <section class="about-hero">
+    <section class="page-hero">
         <h1>About Algarve Property Guidebooks</h1>
-        <p>Your trusted partner for exceptional property experiences</p>
+        <p>Local knowledge, professional design, genuine care for your guests</p>
     </section>
 
     <!-- About Content -->
     <section class="about-content">
         <h2>Our Story</h2>
-        <p>Based in the beautiful coastal town of Lagos, Algarve Property Guidebooks was founded with a simple mission: to help property owners and managers create memorable experiences for their guests and clients.</p>
+        <p>We started Algarve Property Guidebooks because we saw the same problem everywhere. Property owners spending hours answering the same guest questions, while guests arrived without knowing where to eat, what to see, or how the coffee machine worked.</p>
 
-        <p>We understand that the Algarve attracts visitors from around the world, drawn by its stunning beaches, rich history, and warm hospitality. Whether you're welcoming guests to a vacation rental overlooking the Atlantic, showcasing a luxury villa for sale, or managing a portfolio of properties, we help you communicate everything that makes your property special.</p>
+        <p>Based in Lagos, we combine deep local knowledge with clean, modern design. Every guidebook we create is tailored to the specific property and its neighbourhood. No templates, no generic content.</p>
 
-        <p>Our team combines local knowledge with modern design principles to create digital guidebooks that are not only informative but also beautiful and easy to use. We know the best restaurants in Lagos, the hidden beaches of the Western Algarve, and the practical details that make a stay seamless.</p>
+        <p>We cover the full Algarve — from Sagres to Tavira. But we especially know Lagos, Albufeira, Faro, and the surrounding areas inside out. These are the places we live, eat, and explore every day.</p>
 
         <h2>What We Believe</h2>
         <div class="values-grid">
             <div class="value-item">
                 <h3>Quality First</h3>
-                <p>Every guidebook reflects the care you put into your property.</p>
+                <p>Every guidebook reflects the care you put into your property. We treat your brand like our own.</p>
             </div>
             <div class="value-item">
                 <h3>Local Knowledge</h3>
-                <p>Authentic recommendations from people who live and love the Algarve.</p>
+                <p>Authentic recommendations from people who live here. Not copied from TripAdvisor.</p>
             </div>
             <div class="value-item">
                 <h3>Guest Experience</h3>
-                <p>Creating moments of delight that turn guests into return visitors.</p>
+                <p>A great stay starts with great information. We help your guests feel at home from day one.</p>
             </div>
             <div class="value-item">
-                <h3>Simplicity</h3>
-                <p>Information should be easy to find and beautiful to read.</p>
+                <h3>Keep It Simple</h3>
+                <p>Clear pricing, fast delivery, no fuss. We make the process as easy as the product.</p>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
     <section class="cta">
-        <h2>Let's Work Together</h2>
-        <p>Ready to create a guidebook that showcases your property at its best?</p>
-        <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+        <h2>Ready to Get Started?</h2>
+        <p>Your guidebook could be ready within 48 hours.</p>
+        <a href="contact.html" class="btn btn-sand">Get in Touch</a>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <ul class="footer-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <p>&copy; 2025 Algarve Property Guidebooks. All rights reserved. | Lagos, Algarve, Portugal</p>
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="logo.svg" alt="Algarve Property Guidebooks" style="height: 36px; filter: brightness(0) invert(1); margin-bottom: 0.5rem;">
+                    <p>Custom guidebooks for vacation rental properties across the Algarve. Made with local knowledge in Lagos, Portugal.</p>
+                </div>
+                <div class="footer-links-grid">
+                    <div class="footer-col">
+                        <h4>Pages</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="https://wa.me/351XXXXXXXXX" target="_blank">WhatsApp</a></li>
+                            <li><a href="mailto:hello@algarveguidebooks.com">Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Algarve Property Guidebooks. Lagos, Algarve, Portugal.</p>
+            </div>
         </div>
     </footer>
 </body>

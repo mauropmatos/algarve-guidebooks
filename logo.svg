@@ -1,42 +1,42 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 140">
-  
+
   <!-- Geometric diamond shape with wave -->
   <g>
-    <path d="M 70 30 L 110 70 L 70 110 L 30 70 Z" 
-          fill="#0077B6"
+    <path d="M 70 30 L 110 70 L 70 110 L 30 70 Z"
+          fill="#2c7da0"
           opacity="0.95"/>
-    
-    <path d="M 45 65 Q 55 60, 65 65 Q 75 70, 85 65" 
-          fill="none" 
-          stroke="#FFFFFF" 
+
+    <path d="M 45 65 Q 55 60, 65 65 Q 75 70, 85 65"
+          fill="none"
+          stroke="#FFFFFF"
           stroke-width="3.5"
           stroke-linecap="round"/>
   </g>
-  
+
   <!-- Text -->
-  <text x="125" y="62" 
-        font-family="'Arial Black', 'Arial', sans-serif" 
-        font-size="26" 
+  <text x="125" y="62"
+        font-family="'Arial Black', 'Arial', sans-serif"
+        font-size="26"
         font-weight="900"
-        fill="#0077B6"
+        fill="#2c7da0"
         letter-spacing="1">
     ALGARVE
   </text>
-  
-  <text x="125" y="88" 
-        font-family="'Arial Black', 'Arial', sans-serif" 
-        font-size="26" 
+
+  <text x="125" y="88"
+        font-family="'Arial Black', 'Arial', sans-serif"
+        font-size="26"
         font-weight="900"
-        fill="#0077B6"
+        fill="#2c7da0"
         letter-spacing="1">
     PROPERTY
   </text>
-  
-  <text x="125" y="105" 
-        font-family="'Arial', 'Helvetica', sans-serif" 
-        font-size="11" 
+
+  <text x="125" y="105"
+        font-family="'Arial', 'Helvetica', sans-serif"
+        font-size="11"
         font-weight="600"
-        fill="#023047"
+        fill="#1a5f7a"
         letter-spacing="3">
     GUIDEBOOKS
   </text>
