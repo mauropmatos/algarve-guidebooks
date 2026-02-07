@@ -97,21 +97,48 @@ body {
     background: var(--blue-deep) !important;
 }
 
-/* ─── Hero ─── */
+/* ─── Hero Carousel ─── */
 .hero {
+    position: relative;
     text-align: center;
-    padding: 10rem 2rem 8rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.35)),
-                url('https://images.pexels.com/photos/35735074/pexels-photo-35735074.jpeg?auto=compress&cs=tinysrgb&w=1920&dpr=2') center/cover no-repeat;
     min-height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+}
+
+.carousel-slides {
+    position: absolute;
+    inset: 0;
+}
+
+.carousel-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.2s ease;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+}
+
+.carousel-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
 }
 
 .hero-content {
+    position: relative;
+    z-index: 2;
     max-width: 680px;
     margin: 0 auto;
+    padding: 6rem 2rem;
 }
 
 .hero h1 {
@@ -154,6 +181,36 @@ body {
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.75);
     font-weight: 500;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    display: flex;
+    gap: 0.6rem;
+}
+
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.carousel-dot.active {
+    background: var(--white);
+    border-color: var(--white);
+}
+
+.carousel-dot:hover {
+    border-color: var(--white);
 }
 
 /* ─── Divider ─── */
@@ -724,12 +781,19 @@ footer a:hover {
     }
 
     .hero {
-        padding: 6rem 1.5rem 5rem;
         min-height: 70vh;
+    }
+
+    .hero-content {
+        padding: 5rem 1.5rem 4rem;
     }
 
     .hero h1 {
         font-size: 2.25rem;
+    }
+
+    .carousel-dots {
+        bottom: 1.25rem;
     }
 
     .services {
