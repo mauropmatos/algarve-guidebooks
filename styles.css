@@ -41,7 +41,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.25rem 2.5rem;
+    padding: 0.75rem 2.5rem;
     background: var(--white);
     border-bottom: 1px solid var(--border);
     position: sticky;
@@ -56,7 +56,7 @@ body {
 }
 
 .navbar .logo img {
-    height: 52px;
+    height: 80px;
     width: auto;
 }
 
@@ -667,6 +667,10 @@ footer a:hover {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .navbar .logo img {
+        height: 56px;
+    }
+
     .mobile-toggle {
         display: block;
     }
