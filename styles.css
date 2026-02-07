@@ -56,7 +56,7 @@ body {
 }
 
 .navbar .logo img {
-    height: 36px;
+    height: 52px;
     width: auto;
 }
 
@@ -260,6 +260,31 @@ body {
     font-size: 0.9rem;
     color: var(--text-light);
     line-height: 1.65;
+}
+
+/* About Strip */
+.about-strip {
+    padding: 5rem 0;
+    background: var(--white);
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+}
+
+.about-strip h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 1rem;
+    letter-spacing: -0.01em;
+}
+
+.about-strip p {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    line-height: 1.85;
+    max-width: 580px;
+    margin: 0 auto;
 }
 
 /* Contact */
