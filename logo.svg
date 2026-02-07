@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="25 25 325 90">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245 92">
 
   <!-- Geometric diamond shape with wave -->
   <g>
-    <path d="M 70 30 L 110 70 L 70 110 L 30 70 Z"
+    <path d="M 42 5 L 80 46 L 42 87 L 4 46 Z"
           fill="#0093da"
           opacity="0.9"/>
 
-    <path d="M 45 65 Q 55 60, 65 65 Q 75 70, 85 65"
+    <path d="M 19 41 Q 29 36, 39 41 Q 49 46, 59 41"
           fill="none"
           stroke="#FFFFFF"
           stroke-width="3.5"
@@ -14,30 +14,24 @@
   </g>
 
   <!-- Text -->
-  <text x="125" y="62"
+  <text x="92" y="36"
         font-family="'Arial Black', 'Arial', sans-serif"
         font-size="26"
         font-weight="900"
         fill="#32373c"
-        letter-spacing="1">
-    ALGARVE
-  </text>
+        letter-spacing="1">ALGARVE</text>
 
-  <text x="125" y="88"
+  <text x="92" y="64"
         font-family="'Arial Black', 'Arial', sans-serif"
         font-size="26"
         font-weight="900"
         fill="#32373c"
-        letter-spacing="1">
-    PROPERTY
-  </text>
+        letter-spacing="1">PROPERTY</text>
 
-  <text x="125" y="105"
+  <text x="92" y="82"
         font-family="'Arial', 'Helvetica', sans-serif"
-        font-size="11"
+        font-size="12"
         font-weight="600"
         fill="#6b7280"
-        letter-spacing="3">
-    GUIDEBOOKS
-  </text>
+        letter-spacing="3.5">GUIDEBOOKS</text>
 </svg>
