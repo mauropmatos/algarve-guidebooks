@@ -26,28 +26,31 @@
         </ul>
     </nav>
 
-    <!-- Hero Carousel -->
-    <section class="hero" id="hero-carousel">
-        <div class="carousel-slides">
-            <div class="carousel-slide active" style="background-image: url('https://images.pexels.com/photos/2549018/pexels-photo-2549018.jpeg?auto=compress&cs=tinysrgb&w=1920')"></div>
-            <div class="carousel-slide" style="background-image: url('https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg?auto=compress&cs=tinysrgb&w=1920')"></div>
-            <div class="carousel-slide" style="background-image: url('https://images.pexels.com/photos/3935702/pexels-photo-3935702.jpeg?auto=compress&cs=tinysrgb&w=1920')"></div>
-        </div>
-        <div class="carousel-overlay"></div>
+    <!-- Hero -->
+    <section class="hero">
         <div class="hero-content">
             <h1>Custom guidebooks for vacation rentals in the Algarve</h1>
             <p class="hero-subtitle">We create beautiful printed and digital guidebooks for property owners across the Algarve. Your guests get local recommendations and property instructions. You get fewer questions and better reviews.</p>
-            <a href="#contact" class="hero-cta">Get Started</a>
-            <span class="hero-price">Complete package — €99</span>
+            <a href="#contact" class="hero-cta">Get Started — €99</a>
         </div>
-        <div class="carousel-dots">
-            <button class="carousel-dot active" aria-label="Slide 1"></button>
-            <button class="carousel-dot" aria-label="Slide 2"></button>
-            <button class="carousel-dot" aria-label="Slide 3"></button>
+        <div class="hero-showcase" id="hero-carousel">
+            <div class="showcase-window">
+                <div class="showcase-slides">
+                    <img class="showcase-slide active" src="https://images.pexels.com/photos/2549018/pexels-photo-2549018.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Guidebook example — coastal recommendations">
+                    <img class="showcase-slide" src="https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Guidebook example — local restaurants">
+                    <img class="showcase-slide" src="https://images.pexels.com/photos/3935702/pexels-photo-3935702.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Guidebook example — property instructions">
+                </div>
+            </div>
+            <div class="carousel-dots">
+                <button class="carousel-dot active" aria-label="Slide 1"></button>
+                <button class="carousel-dot" aria-label="Slide 2"></button>
+                <button class="carousel-dot" aria-label="Slide 3"></button>
+            </div>
         </div>
     </section>
 
-    <hr class="divider">
+    <!-- Section Divider -->
+    <div class="section-fade"></div>
 
     <!-- Services -->
     <section id="services" class="services">
@@ -105,6 +108,9 @@
         </div>
     </section>
 
+    <!-- Fade: Services → About -->
+    <div class="section-fade-dark"></div>
+
     <!-- About -->
     <section class="about-strip">
         <div class="container">
@@ -112,6 +118,9 @@
             <p>We're a small team based in Lagos. We know the best restaurants, the quietest beaches and the shortcuts that only locals use. Every recommendation in your guidebook comes from first-hand experience — from Lagos and Sagres to Albufeira, Faro and Tavira.</p>
         </div>
     </section>
+
+    <!-- Fade: About → Contact -->
+    <div class="section-fade-dark-out"></div>
 
     <!-- Contact -->
     <section id="contact" class="contact">
@@ -166,9 +175,9 @@
 
     <script>
     (function() {
-        var hero = document.getElementById('hero-carousel');
-        var slides = hero.querySelectorAll('.carousel-slide');
-        var dots = hero.querySelectorAll('.carousel-dot');
+        var carousel = document.getElementById('hero-carousel');
+        var slides = carousel.querySelectorAll('.showcase-slide');
+        var dots = carousel.querySelectorAll('.carousel-dot');
         var current = 0;
         var timer;
 
@@ -200,8 +209,8 @@
             });
         });
 
-        hero.addEventListener('mouseenter', stopAutoplay);
-        hero.addEventListener('mouseleave', startAutoplay);
+        carousel.addEventListener('mouseenter', stopAutoplay);
+        carousel.addEventListener('mouseleave', startAutoplay);
 
         startAutoplay();
     })();
