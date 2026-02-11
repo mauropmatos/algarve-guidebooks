@@ -386,7 +386,11 @@ body {
     font-size: 1.05rem;
     color: var(--text-secondary);
     line-height: 1.8;
-    margin-bottom: 2.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-info .btn-whatsapp {
+    margin-bottom: 1.25rem;
 }
 
 .contact-methods {
@@ -410,6 +414,14 @@ body {
 
 .contact-method:hover {
     border-color: var(--blue);
+}
+
+.contact-method-static {
+    cursor: default;
+}
+
+.contact-method-static:hover {
+    border-color: var(--border);
 }
 
 .contact-method svg {
