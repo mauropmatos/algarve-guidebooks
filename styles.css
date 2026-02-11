@@ -268,11 +268,39 @@ body {
     flex-direction: column;
 }
 
+.price-badge {
+    display: inline-block;
+    align-self: flex-start;
+    background: var(--blue);
+    color: var(--white);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.3rem 0.85rem;
+    border-radius: 999px;
+    margin-bottom: 1rem;
+}
+
+.price-row {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+
+.price-original {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-tertiary);
+    text-decoration: line-through;
+    line-height: 1;
+}
+
 .service-main .price {
     font-size: 3.75rem;
     font-weight: 800;
     color: var(--text);
-    margin-bottom: 0.25rem;
     letter-spacing: -0.04em;
     line-height: 1;
 }
@@ -280,9 +308,19 @@ body {
 .service-main .price-note {
     font-size: 0.9rem;
     color: var(--text-tertiary);
-    margin-bottom: 2.25rem;
-    padding-bottom: 2.25rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
     border-bottom: 1px solid var(--border);
+}
+
+.price-urgency {
+    margin-top: 1.75rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.85rem;
+    color: var(--blue);
+    font-weight: 600;
+    text-align: center;
 }
 
 .service-list {
